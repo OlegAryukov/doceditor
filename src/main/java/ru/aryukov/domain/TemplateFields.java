@@ -5,20 +5,24 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Created by dev on 01.11.17.
+ * Created by dev on 23.11.17.
  */
+
 @Data
 @Entity
-public class Template {
+public class TemplateFields {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private ArrayList<TemplateFields> tempalteFields;
+    private Long fieldId;
+
+    private Long templateId;
+
+    private Integer order;
+
 
 }
